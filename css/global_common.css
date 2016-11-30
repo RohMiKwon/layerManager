@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+
+/* reset */
+html,body{height:100%;-webkit-text-size-adjust:none;font-size:100%}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,figure,figcaption{margin:0;padding:0;font-family:'SamsungIFRg',sans-serif;color:#5f5f5f}
+fieldset,li,img{border:0;vertical-align:top}
+ul,ol{list-style:none}
+button{overflow:visible;border:0;background-color:transparent;cursor:pointer}
+button::-moz-focus-inner{padding:0;}
+input,button{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+address,caption,em{font-style:normal}
+a,a:focus,a:active,a:hover{color:#5f5f5f;text-decoration:none}
+hr{display:none}
+.blind,legend{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:1px;line-height:100px;white-space:nowrap}
+::-webkit-input-placeholder{color:#5f5f5f}
+::-moz-placeholder{color:#5f5f5f;opacity:1}
+:-ms-input-placeholder{color:#5f5f5f}
+.placeholdersjs{color:#5f5f5f}
+.dimmed{display:none;position:fixed;left:0;top:0;right:0;bottom:0;z-index:90;width:100%;height:100%;background:#000;opacity:0.8;filter:alpha(opacity=80);}
+
+#wrap{min-width:320px;}
+
+/* ie8 */
+.lt-ie8 #wrap{min-width:1280px;margin:0 auto}
+
+/* google Code iframe hidden */
+iframe[name="google_conversion_frame"]{position:absolute !important;visibility:hidden;height:0}
+
+/* PCP samsung onefont apply */
+.bg-ha,.bg-ha div,.bg-ha dl,.bg-ha dt,.bg-ha dd,.bg-ha ul,.bg-ha ol,.bg-ha li,.bg-ha h1,.bg-ha h2,.bg-ha h3,.bg-ha h4,.bg-ha h5,.bg-ha h6,.bg-ha p,.bg-ha table,.bg-ha th,.bg-ha td,.bg-ha form,.bg-ha fieldset,.bg-ha legend,.bg-ha textarea,.bg-ha input,.bg-ha select,.bg-ha textarea,.bg-ha button,.bg-ha figure,.bg-ha figcaption,
+.bg-he,.bg-he div,.bg-he dl,.bg-he dt,.bg-he dd,.bg-he ul,.bg-he ol,.bg-he li,.bg-he h1,.bg-he h2,.bg-he h3,.bg-he h4,.bg-he h5,.bg-he h6,.bg-he p,.bg-he table,.bg-he th,.bg-he td,.bg-he form,.bg-he fieldset,.bg-ha legend,.bg-ha textarea,.bg-ha input,.bg-ha select,.bg-ha textarea,.bg-ha button,.bg-ha figure,.bg-ha figcaption{font-family:'SamsungOneLt','SamsungIFRg',sans-serif}
+
+.bg-ha .info-sub-tit,
+.bg-he .btn-all,.bg-he .spot-text,.bg-he .spot-tit,.bg-he .page-navi-list li a,.bg-he .section-info .section-tit,.bg-he .section-info .section-stit,.bg-he .section-info .section-sub-tit{font-family:'SamsungOneRg','SamsungIFBd',sans-serif}
+
+html[lang^="ko"] .bg-ha,html[lang^="ko"] .bg-ha div,html[lang^="ko"] .bg-ha dl,html[lang^="ko"] .bg-ha dt,html[lang^="ko"] .bg-ha dd,html[lang^="ko"] .bg-ha ul,html[lang^="ko"] .bg-ha ol,html[lang^="ko"] .bg-ha li,html[lang^="ko"] .bg-ha h1,html[lang^="ko"] .bg-ha h2,html[lang^="ko"] .bg-ha h3,html[lang^="ko"] .bg-ha h4,html[lang^="ko"] .bg-ha h5,html[lang^="ko"] .bg-ha h6,html[lang^="ko"] .bg-ha p,html[lang^="ko"] .bg-ha table,html[lang^="ko"] .bg-ha th,html[lang^="ko"] .bg-ha td,html[lang^="ko"] .bg-ha form,html[lang^="ko"] .bg-ha fieldset,html[lang^="ko"] .bg-ha legend,html[lang^="ko"] .bg-ha textarea,html[lang^="ko"] .bg-ha input,html[lang^="ko"] .bg-ha select,html[lang^="ko"] .bg-ha textarea,html[lang^="ko"] .bg-ha button,html[lang^="ko"] .bg-ha figure,html[lang^="ko"] .bg-ha figcaption,
+html[lang^="ko"] .bg-he,html[lang^="ko"] .bg-he div,html[lang^="ko"] .bg-he dl,html[lang^="ko"] .bg-he dt,html[lang^="ko"] .bg-he dd,html[lang^="ko"] .bg-he ul,html[lang^="ko"] .bg-he ol,html[lang^="ko"] .bg-he li,html[lang^="ko"] .bg-he h1,html[lang^="ko"] .bg-he h2,html[lang^="ko"] .bg-he h3,html[lang^="ko"] .bg-he h4,html[lang^="ko"] .bg-he h5,html[lang^="ko"] .bg-he h6,html[lang^="ko"] .bg-he p,html[lang^="ko"] .bg-he table,html[lang^="ko"] .bg-he th,html[lang^="ko"] .bg-he td,html[lang^="ko"] .bg-he form,html[lang^="ko"] .bg-he fieldset,html[lang^="ko"] .bg-ha legend,html[lang^="ko"] .bg-ha textarea,html[lang^="ko"] .bg-ha input,html[lang^="ko"] .bg-ha select,html[lang^="ko"] .bg-ha textarea,html[lang^="ko"] .bg-ha button,html[lang^="ko"] .bg-ha figure,html[lang^="ko"] .bg-ha figcaption{font-family:'SECGCWL',sans-serif}
+html[lang^="ko"] .bg-ha .info-sub-tit,
+html[lang^="ko"] .bg-he .spot-tit,html[lang^="ko"] .bg-he .section-info .section-stit{font-family:"SECGCWM"}
+html[lang^="ko"] .bg-he .btn-all,html[lang^="ko"] .bg-he .spot-text,html[lang^="ko"] .bg-he .page-navi-list li a,html[lang^="ko"] .bg-he .section-info .section-tit,html[lang^="ko"] .bg-he .section-info .section-sub-tit{font-family:'SECGCWB'}
+
+.rtl #content.bg-ha,.rtl #content.bg-ha div,.rtl #content.bg-ha dl,.rtl #content.bg-ha dt,.rtl #content.bg-ha dd,.rtl #content.bg-ha ul,.rtl #content.bg-ha ol,.rtl #content.bg-ha li,.rtl #content.bg-ha h1,.rtl #content.bg-ha h2,.rtl #content.bg-ha h3,.rtl #content.bg-ha h4,.rtl #content.bg-ha h5,.rtl #content.bg-ha h6,.rtl #content.bg-ha p,.rtl #content.bg-ha table,.rtl #content.bg-ha th,.rtl #content.bg-ha td,.rtl #content.bg-ha form,.rtl #content.bg-ha fieldset,.rtl #content.bg-ha legend,.rtl #content.bg-ha textarea,.rtl #content.bg-ha input,.rtl #content.bg-ha select,.rtl #content.bg-ha textarea,.rtl #content.bg-ha button,.rtl #content.bg-ha figure,.rtl #content.bg-ha figcaption,
+.rtl #content.bg-he,.rtl #content.bg-he div,.rtl #content.bg-he dl,.rtl #content.bg-he dt,.rtl #content.bg-he dd,.rtl #content.bg-he ul,.rtl #content.bg-he ol,.rtl #content.bg-he li,.rtl #content.bg-he h1,.rtl #content.bg-he h2,.rtl #content.bg-he h3,.rtl #content.bg-he h4,.rtl #content.bg-he h5,.rtl #content.bg-he h6,.rtl #content.bg-he p,.rtl #content.bg-he table,.rtl #content.bg-he th,.rtl #content.bg-he td,.rtl #content.bg-he form,.rtl #content.bg-he fieldset,.bg-ha legend,.bg-ha textarea,.bg-ha input,.bg-ha select,.bg-ha textarea,.bg-ha button,.bg-ha figure,.bg-ha figcaption{font-family:'SamsungOneArabicLt','Tahoma'}
+.rtl #content.bg-ha .sub-heading,.rtl #content.bg-ha .info-sub-tit,.rtl #content.bg-ha .info-tit,
+.rtl #content.bg-he .btn-all,.rtl #content.bg-he .spot-text,.rtl #content.bg-he .spot-tit,.rtl #content.bg-he .page-navi-list li a,.rtl #content.bg-he .section-info .section-tit,.rtl #content.bg-he .section-info .section-stit,.rtl #content.bg-he .section-info .section-sub-tit{font-family:'SamsungOneArabicRg','Tahoma'}
+
+html[lang^="he"].rtl #content.bg-ha,html[lang^="he"].rtl #content.bg-ha div,html[lang^="he"].rtl #content.bg-ha dl,html[lang^="he"].rtl #content.bg-ha dt,html[lang^="he"].rtl #content.bg-ha dd,html[lang^="he"].rtl #content.bg-ha ul,html[lang^="he"].rtl #content.bg-ha ol,html[lang^="he"].rtl #content.bg-ha li,html[lang^="he"].rtl #content.bg-ha h1,html[lang^="he"].rtl #content.bg-ha h2,html[lang^="he"].rtl #content.bg-ha h3,html[lang^="he"].rtl #content.bg-ha h4,html[lang^="he"].rtl #content.bg-ha h5,html[lang^="he"].rtl #content.bg-ha h6,html[lang^="he"].rtl #content.bg-ha p,html[lang^="he"].rtl #content.bg-ha table,html[lang^="he"].rtl #content.bg-ha th,html[lang^="he"].rtl #content.bg-ha td,html[lang^="he"].rtl #content.bg-ha form,html[lang^="he"].rtl #content.bg-ha fieldset,html[lang^="he"].rtl #content.bg-ha legend,html[lang^="he"].rtl #content.bg-ha textarea,html[lang^="he"].rtl #content.bg-ha input,html[lang^="he"].rtl #content.bg-ha select,html[lang^="he"].rtl #content.bg-ha textarea,html[lang^="he"].rtl #content.bg-ha button,html[lang^="he"].rtl #content.bg-ha figure,html[lang^="he"].rtl #content.bg-ha figcaption,
+html[lang^="he"].rtl #content.bg-he,html[lang^="he"].rtl #content.bg-he div,html[lang^="he"].rtl #content.bg-he dl,html[lang^="he"].rtl #content.bg-he dt,html[lang^="he"].rtl #content.bg-he dd,html[lang^="he"].rtl #content.bg-he ul,html[lang^="he"].rtl #content.bg-he ol,html[lang^="he"].rtl #content.bg-he li,html[lang^="he"].rtl #content.bg-he h1,html[lang^="he"].rtl #content.bg-he h2,html[lang^="he"].rtl #content.bg-he h3,html[lang^="he"].rtl #content.bg-he h4,html[lang^="he"].rtl #content.bg-he h5,html[lang^="he"].rtl #content.bg-he h6,html[lang^="he"].rtl #content.bg-he p,html[lang^="he"].rtl #content.bg-he table,html[lang^="he"].rtl #content.bg-he th,html[lang^="he"].rtl #content.bg-he td,html[lang^="he"].rtl #content.bg-he form,html[lang^="he"].rtl #content.bg-he fieldset,.bg-ha legend,.bg-ha textarea,.bg-ha input,.bg-ha select,.bg-ha textarea,.bg-ha button,.bg-ha figure,.bg-ha figcaption{font-family:'SamsungOneHebrewLt','Tahoma'}
+html[lang^="he"].rtl #content.bg-ha .sub-heading,html[lang^="he"].rtl #content.bg-ha .info-sub-tit,html[lang^="he"].rtl #content.bg-ha .info-tit,
+html[lang^="he"].rtl #content.bg-he .btn-all,html[lang^="he"].rtl #content.bg-he .spot-text,html[lang^="he"].rtl #content.bg-he .spot-tit,html[lang^="he"].rtl #content.bg-he .page-navi-list li a,html[lang^="he"].rtl #content.bg-he .section-info .section-tit,html[lang^="he"].rtl #content.bg-he .section-info .section-stit,html[lang^="he"].rtl #content.bg-he .section-info .section-sub-tit{font-family:'SamsungOneHebrewRg','Tahoma'}
+
+/*  2016. 04 . 18 
+html[lang^="zh-"] .bg-ha,html[lang^="zh-"] .bg-ha div,html[lang^="zh-"] .bg-ha dl,html[lang^="zh-"] .bg-ha dt,html[lang^="zh-"] .bg-ha dd,html[lang^="zh-"] .bg-ha ul,html[lang^="zh-"] .bg-ha ol,html[lang^="zh-"] .bg-ha li,html[lang^="zh-"] .bg-ha h1,html[lang^="zh-"] .bg-ha h2,html[lang^="zh-"] .bg-ha h3,html[lang^="zh-"] .bg-ha h4,html[lang^="zh-"] .bg-ha h5,html[lang^="zh-"] .bg-ha h6,html[lang^="zh-"] .bg-ha p,html[lang^="zh-"] .bg-ha table,html[lang^="zh-"] .bg-ha th,html[lang^="zh-"] .bg-ha td,html[lang^="zh-"] .bg-ha form,html[lang^="zh-"] .bg-ha fieldset,html[lang^="zh-"] .bg-ha legend,html[lang^="zh-"] .bg-ha textarea,html[lang^="zh-"] .bg-ha input,html[lang^="zh-"] .bg-ha select,html[lang^="zh-"] .bg-ha textarea,html[lang^="zh-"] .bg-ha button,html[lang^="zh-"] .bg-ha figure,html[lang^="zh-"] .bg-ha figcaption,
+html[lang^="zh-"] .bg-he,html[lang^="zh-"] .bg-he div,html[lang^="zh-"] .bg-he dl,html[lang^="zh-"] .bg-he dt,html[lang^="zh-"] .bg-he dd,html[lang^="zh-"] .bg-he ul,html[lang^="zh-"] .bg-he ol,html[lang^="zh-"] .bg-he li,html[lang^="zh-"] .bg-he h1,html[lang^="zh-"] .bg-he h2,html[lang^="zh-"] .bg-he h3,html[lang^="zh-"] .bg-he h4,html[lang^="zh-"] .bg-he h5,html[lang^="zh-"] .bg-he h6,html[lang^="zh-"] .bg-he p,html[lang^="zh-"] .bg-he table,html[lang^="zh-"] .bg-he th,html[lang^="zh-"] .bg-he td,html[lang^="zh-"] .bg-he form,html[lang^="zh-"] .bg-he fieldset,.bg-ha legend,.bg-ha textarea,.bg-ha input,.bg-ha select,.bg-ha textarea,.bg-ha button,.bg-ha figure,.bg-ha figcaption{font-family:'SamsungOneZhRHK','微軟正黑體', 'Arial', 'sans-serif' !important}
+html[lang^="zh-"] .bg-ha .info-sub-tit,
+html[lang^="zh-"] .bg-he .btn-all,html[lang^="zh-"] .bg-he .spot-text,html[lang^="zh-"] .bg-he .spot-tit,html[lang^="zh-"] .bg-he .page-navi-list li a,html[lang^="zh-"] .bg-he .section-info .section-tit,html[lang^="zh-"] .bg-he .section-info .section-stit,html[lang^="zh-"] .bg-he .section-info .section-sub-tit{font-family:'SamsungOneZhDBHK','微軟正黑體', 'Arial', 'sans-serif' !important} */
+
+html[lang="th"] .bg-ha .info-sub-tit{font-family:'pslKittithadabold'}
