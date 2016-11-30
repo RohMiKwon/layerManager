@@ -16,7 +16,7 @@ const PATHS = {
 };
 
 const HEADER = ['/**',
-  ' * samsung.com layer manager',
+  ' * layer manager',
   ' * src : common/js/src/smg/global/smg.global.layermanager.js',
   ' * @version 1.1.1',
   ' * @requires',

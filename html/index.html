@@ -8,16 +8,17 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <meta http-equiv="Content-Language" content="ko">
 <meta property="product:availability"	content="oos">
-<title>삼성 HTML 기본 템플릿</title>
-<link rel="stylesheet" type="text/css" href="../css/global_common.css">
-<link rel="stylesheet" type="text/css" href="../css/nav.css">
-<!--[if lt IE 9]>
-    <script src="http://www.samsung.com/common/js/dist/modern.lib.min.js"></script>
-<![endif]-->
-<!-- local css -->
-<link rel="stylesheet" type="text/css" href="http://www.samsung.com/uk/common/css/common.css">
-<link rel="stylesheet" type="text/css" href="http://www.samsung.com/uk/common/css/home.css">
+<title>레이어모듈</title>
+
 <style>
+.layer-open{height:initial;position:fixed;left:0;right:0;}
+.layer-open body{overflow-x:hidden;overflow-y:hidden;}
+.layer-open .layer-module{overflow-y:auto;}
+.layer-module{overflow:hidden;position:fixed;top:0;right:0;bottom:0;left:0;-webkit-overflow-scrolling:touch;z-index:9999}
+.layer-open .dimmed{position:absolute;bottom:initial;cursor:pointer;}
+.layer-open .keep-dimmed{cursor:default;}
+
+
 .button{display:inline-block;min-width:300px;padding:3px 5px 2px;border:1px solid #464646;border-radius:2px;color:#464646;background:#fff;text-align:center;font-size:15px;box-sizing:border-box;}
 
 .box{position:relative;border:1px solid #ddd;border-radius:2px;background:#f5f5f5}
@@ -39,11 +40,6 @@
 }
 </style>
 
-<!-- 임시코드 -->
-<script>
-	var SITE_CD = 'UK';
-</script>
-<!-- //임시코드 -->
 </head>
 <body>
 
@@ -133,22 +129,7 @@
 					<div class="popup_title">Privacy Policy</div>
 					<div class="popup_cont">
 						<div class="privacy_wrap">
-							<div class="check_box">
-								<input type="checkbox" name="privacy-terms" id="privacy-terms">
-								<label for="privacy-terms" class="check_text">I have read and agree to the Samsung.com <a href="/uk/info/privacy.html" target="_blank" class="privacy_link">Privacy Policy</a></label>
-								<!-- ERROR : Clicked PROCEED TO STORE button : display:block -->
-								<p class="check_error" id="errorPrivacy" style="display: none;">Tick this box to proceed to Samsung.com.</p>
-								<!-- //ERROR : Clicked PROCEED TO STORE button -->
-							</div>
-							<div class="check_box">
-								<input type="checkbox" name="privacy-terms2" id="privacy-terms2">
-								<label for="privacy-terms2" class="check_text">By ticking this box, I accept Samsung Service Updates, including :</label>
-								<p class="check_txt">Samsung.com Services and marketing information, new product and service announcements as well as special offers, events and newsletters. </p>
-							</div>
-							<div class="privacy_btn">
-								<a href="javascript:void(0)" class="button" id="privacyBtn">PROCEED TO SAMSUNG.COM</a>
-								<a href="javascript:void(0)" class="button login-leave-btn">LEAVE PAGE</a>
-							</div>
+							fffffffffff
 						</div>
 					</div>
 					<button class="close-button icon-close-x login-leave-btn" data-focus-id="shop-popover-close" data-tab-disable="true" tabindex="0">
@@ -171,48 +152,7 @@
 				<div class="sign-inner-wrap">
 					<div class="title">Sign In</div>
 					<div class="popup_cont">
-						<h2 class="sub-tit">Sign in with your Samsung Account</h2>
-						<div class="input-wrap">
-							<label for="E-mail">E-mail</label>
-							<div class="input">
-								<input type="text" class="sign_input" name="E-mail" id="E-mail" data-focus-id="email" data-tab-previous="shop-popover-close" autocomplete="off" maxlength="100">
-							</div>
-						</div>
-						<!-- [DEV] : error message -->
-						<p class="error" id="errorId" style="display: none;"><span class="icon-alert"></span>Please enter an e-mail address</p>
-						<div class="chk">
-							<input type="checkbox" name="accept-terms" id="acceptRemember">
-							<label for="acceptRemember">Remember my e-mail address</label>
-						</div>
-						<div class="input-wrap mgt15">
-							<label for="pw">Password</label>
-							<div class="input">
-								<input type="password" class="sign_input" name="pw" id="pw" autocomplete="off" maxlength="100">
-							</div>
-						</div>
-						<!-- [DEV] : error message -->
-						<p class="error" id="errorPw" style="display: none;"><span class="icon-alert"></span>Please enter a password </p>
-						<p class="sign-link"><a href="javascript:void(0);" class="cta find-account-btn">Find your e-mail or password<span class="icon-link-play"></span></a></p>
-						<div class="btn-wrap ac">
-							<a href="javascript:void(0);" class="button sign-in-btn">SIGN IN</a>
-							<p>Not a member yet? <a href="javascript:void(0);" class="cta sign-up-btn">Sign up now <span class="icon-link-play"></span></a></p>
-						</div>
-						<!-- <div class="connect_wrap">
-							<div class="connet-tit">Connect with</div>
-							<div class="sns-wrap">
-								<iframe src="" id="snsIframe" width="100%" height="40" frameborder="0" scrolling="no"></iframe>
-							</div>	                        
-							<div class="toggle-layer">                	
-								<a href="javascript:void(0);" class="toggle signToggle"  id="signToggleArrow">
-									<span class="toggle-tit">Social Sign in?</span>
-									<span class="icon-down-arrow"></span>
-									<span class="icon-down-arrow icon-up-arrow">addclass icon-up-arrow, msg:code common.notice.collapse.wcag</span>
-								</a>
-								<div class="toggle-content">
-									<p>In order to use Social Sign-in, please sign up Samsung Account and connect your SNS accounts in "Preference".  </p>
-								</div>
-							</div>							
-						</div> -->
+						sssssssssssssss
 					</div>
 					<button class="close-button icon-close-x login-close-btn"><span class="blind">Close</span></button>
 				</div>
@@ -259,16 +199,7 @@
 <div class="layer_popup">
 	<div id="gloval_message_popup" class="popup-nextgen-type popAlign">
 		<div class="popup_wrap">
-			<p class="msg-text tc">
-				Samsung Electronics (UK) Limited : Local Privacy Policy
-Samsung Electronics (UK) Limited and our Affiliates (“Samsung,” “we,” “us,” “our”) know how important privacy is to our customers, and we strive to be clear about how we collect, use, disclose, transfer and store your information. This Privacy Policy provides an overview of our information practices. The Privacy Policy applies to Samsung devices, websites or online applications that refer to or link to the Privacy Policy (collectively, our “Services”). 
-
-While this Privacy Policy applies to all our Services, we also have provided certain specific privacy supplements that contain additional information about our practices in connection with particular Services. These supplements apply to your use of the Services they cover. Additional consent will be obtained for certain data processing activities. 
-
-Please note that the Privacy Policy applies to your usage of Samsung devices (which are among the Services covered by this Privacy Policy, along with our websites and online applications). It also applies regardless of whether you use a computer, mobile phone, tablet, TV, or other device to access our Services. It is important that you read the Privacy Policy carefully because anytime you use our Services, you consent to the practices we describe in the Privacy Policy and the supplements. If you do not agree to the practices described in the Privacy Policy, you should not use our Services. 
-
-It also is important that you check back often for updates to the Privacy Policy. If we update the Privacy Policy we will let you know about changes we consider to be material by placing a note on relevant Services. By accessing or using our Services after we have placed such a notice, you consent to the new practice(s) identified in the update. The most current version of the Privacy Policy will always be available here http://www.samsung.com/uk/info/privacy.html. You can check the “effective date” posted at the top to see when the Privacy Policy was last updated.
-			</p>
+			ssssssssssssssss
 			<div class="pop-btn">
 				<a href="#" class="button login-leave-btn">OK</a>
 			</div>
@@ -281,20 +212,10 @@ It also is important that you check back often for updates to the Privacy Policy
 <!-- //NextGen Style -->
 
 <div id="console"></div>
-
-<script src="http://preview4.samsung.com/common/js/dist/vendor.min.js"></script>	
-<script src="http://preview4.samsung.com/common/js/src/smg/namespace.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/smg/util/smg.util.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/smg/static/smg.static.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/smg/event/smg.event.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/smg/common/smg.common.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/smg/global/smg.global.tracking.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/vendor/jquery/jquery.menu-aim.smg.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/smg/global/smg.global.gnb.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/smg/global/smg.global.footer.js"></script>
-<script src="http://preview4.samsung.com/common/js/src/smg/global/smg.global.font.js"></script>
-<script src="http://preview4.samsung.com/common/js/dist/smg.module.min.js"></script>
-
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
 <script src="../app/build/smg.global.layermanager.js"></script>
 <!-- <script src="../app/dist/smg.global.layermanager.min.js"></script> -->
 
